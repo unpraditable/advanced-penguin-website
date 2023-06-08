@@ -78,6 +78,18 @@ nav .circle-red {
   right: -8px;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .relative-container {
   position: relative;
 }
@@ -85,6 +97,8 @@ nav .circle-red {
 header h1 {
   font-weight: bold;
   margin: 16px;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 header p {
@@ -170,6 +184,17 @@ button[type="submit"] {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.penguin-photo-item {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.penguin-photo-item:hover {
+  filter: none;
+  transition-property: filter;
+  transition-duration: 1s;
 }
 
 /* for tablet and desktop */
