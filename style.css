@@ -61,6 +61,9 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-top: 48px;
+  background-image: url("img/Penguin_bg.jpg");
+  background-position: top center;
+  background-size: cover;
 }
 
 nav .circle-red {
@@ -99,10 +102,12 @@ header h1 {
   margin: 16px;
   animation-duration: 3s;
   animation-name: slidein;
+  text-shadow: 2px 2px #222222;
 }
 
 header p {
   margin: 0;
+  text-shadow: 2px 2px #222222;
 }
 
 img {
