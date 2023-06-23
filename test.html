@@ -1,10 +1,187 @@
 <!DOCTYPE html>
-<head>
-  <title>Test Page</title>
-</head>
-<body>
-  <h1>This is a H1 elements</h1>
-  <span style="font-size: 32px; margin: 21px 0; font-weight: 700"
-    >This is also similar with H1 elements!
-  </span>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Photo App</title>
+    <link rel="stylesheet" href="test.css" />
+    <style></style>
+  </head>
+  <body>
+    <nav>
+      <span>
+        <img
+          src="https://user-images.githubusercontent.com/2970318/209562035-bdbfb418-b564-4676-91bc-286fa03ca4d8.png"
+          alt="Penguin Icon"
+        />
+        <b>Penguin Club</b>
+      </span>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Penguin Photo App</h1>
+      <p>This is an app about the most beautiful creature in the world!</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Penguin Photos</h2>
+        <div>
+          <img
+            src="https://user-images.githubusercontent.com/2970318/209440135-dadf88ab-80b9-4e81-bed1-1f517e8f9286.jpg"
+            alt="Three penguins standing together on a snow field"
+          />
+        </div>
+      </section>
+      <section>
+        <h2>Facts about penguins</h2>
+        <ul>
+          <li>Penguins can swim</li>
+          <li>Penguins love to socialize</li>
+          <li>Penguin is the most beautiful animal in the world!</li>
+        </ul>
+        <figure>
+          <img
+            src="https://user-images.githubusercontent.com/2970318/209440113-f43e969d-0ddd-4b38-917c-dd953ad1839b.jpg"
+            alt="Penguin swims underwater"
+          />
+          <figcaption>Penguin <em>flies</em> underwater.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Where to find penguins?</h2>
+        <ol>
+          <li>Antartica</li>
+          <li>New Zealand</li>
+          <li>Your local aquarium!</li>
+        </ol>
+        <figure>
+          <img
+            src="https://user-images.githubusercontent.com/2970318/209439958-1c0b97fd-6fa2-452b-91aa-e5037a6df657.jpg"
+            alt="Penguins looking at the window from inside Skopje Zoo."
+          />
+          <figcaption>Penguins in local aquarium</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>A cute baby penguin video!</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/s8hlfPqdRFw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section>
+        <h2>Join Our Penguin Fanclub!</h2>
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Personal Data</legend>
+            <div>
+              <label for="fullname">Full Name:</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Input Your Fullname"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Input Your Email"
+              />
+            </div>
+
+            <div>
+              <p>Are you living in Indonesia?</p>
+              <input
+                type="radio"
+                name="domicile"
+                id="domicile_yes"
+                value="domicile_yes"
+              />
+              <label for="domicile_yes">Yes</label>
+
+              <input
+                type="radio"
+                name="domicile"
+                id="domicile_no"
+                value="domicile_no"
+              />
+              <label for="domicile_no">No</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Information</legend>
+            <div>
+              <p>What do you think about penguins?</p>
+              <input
+                type="checkbox"
+                name="opinion"
+                id="opinion_cute"
+                value="opinion_cute"
+              />
+              <label for="opinion_cute">Cute</label>
+
+              <input
+                type="checkbox"
+                name="opinion"
+                id="opinion_adorable"
+                value="opinion_adorable"
+              />
+              <label for="opinion_adorable">Adorable</label>
+
+              <input
+                type="checkbox"
+                name="opinion"
+                id="opinion_beautiful"
+                value="opinion_beautiful"
+              />
+              <label for="opinion_beautiful">Beautiful</label>
+            </div>
+
+            <div>
+              <label for="textarea_penguin"
+                >Tell us why do you love penguins</label
+              >
+              <textarea
+                id="textarea_penguin"
+                name="textarea_penguin"
+                rows="4"
+                placeholder="Tell us why you love penguins"
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="penguin_pic">Upload your favorite penguin pic!</label>
+              <input
+                type="file"
+                id="penguin_pic"
+                name="penguin_pic"
+                accept="image/png, image/jpeg"
+              />
+            </div>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

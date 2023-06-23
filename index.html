@@ -31,8 +31,8 @@
           src="https://user-images.githubusercontent.com/2970318/209562035-bdbfb418-b564-4676-91bc-286fa03ca4d8.png"
           alt="Penguin Fan Club Icon"
         />
+
         <b>Penguin Club</b>
-        <span class="circle-red">99+</span>
       </span>
 
       <span id="dark-mode-switch">
@@ -98,10 +98,17 @@
             <li>Penguin is the most gorgeous animal in the world!</li>
           </ul>
           <figure>
-            <img
-              src="img/Pengu-6.webp"
-              alt="A penguin swims under the deep sea."
-            />
+            <picture>
+              <source
+                media="(max-width: 480px)"
+                srcset="img/Pengu-6-mobile.png"
+              />
+              <img
+                src="img/Pengu-6.webp"
+                alt="A penguin swims under the deep sea."
+              />
+            </picture>
+
             <figcaption>Penguin <em>flies</em> underwater.</figcaption>
           </figure>
         </div>
@@ -135,6 +142,16 @@
             <div>
               <label for="email">Email:</label>
               <input id="email" type="email" required />
+            </div>
+
+            <div>
+              <label for="dob">Date of Birth</label>
+              <input
+                type="date"
+                id="dob"
+                name="trip-start"
+                value="2018-07-22"
+              />
             </div>
 
             <div>

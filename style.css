@@ -218,11 +218,6 @@ h2 {
   text-align: center;
 }
 
-#penguin-facts .flex-container img {
-  height: 240px;
-  width: auto;
-}
-
 #penguin-photos .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -251,6 +246,11 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 4px 4px;
+  margin: 8px 0;
+  display: block;
+}
+
+input[type="date"] {
   margin: 8px 0;
   display: block;
 }

@@ -1,0 +1,43 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+header {
+  padding-top: 50.5px;
+  background-color: #222222;
+  color: white;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > span {
+  display: flex;
+  align-items: center;
+}
+
+nav > span > img {
+  height: 36px;
+}
+
+nav > ul > li {
+  display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: aquamarine;
+  }
+}
